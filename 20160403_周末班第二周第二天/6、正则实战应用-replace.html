@@ -40,13 +40,13 @@
     //    console.log(str);
 
     //2、
-    //    var str = "123678";//->"壹贰叁陆柒捌"
-    //    var ary = ["零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖"];
-    //    str = str.replace(/\d/g, function () {
-    //        //console.log(arguments[0]);//->每一次捕获到的内容(我们要的数字)
-    //        return ary[arguments[0]];
-    //    });
-    //    console.log(str);
+       var str = "123678";//->"壹贰叁陆柒捌"
+        var ary = ["零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖"];
+        str = str.replace(/^\d&/g, function () {
+            //console.log(arguments[0]);//->每一次捕获到的内容(我们要的数字)
+           return ary[arguments[0]];
+        });
+        console.log(str);
 
 
     //3、格式化时间字符串
