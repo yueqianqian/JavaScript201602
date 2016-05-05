@@ -21,3 +21,6 @@ var server = http.createServer(function (req, res) {
 server.listen(9876, function () {
     console.log("NODE服务已经成功启动,正在监听'9876'这个端口!");
 });
+
+//1/confirm.确定的默认值
+//sever:里的时候解编码；
